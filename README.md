@@ -4,12 +4,12 @@ Manage training events for an organization
 
 ## Domains
 
-- [ ] Trainings
-  - [ ] table design: program name, trainer name, company name, venue, start date, end date
-- [ ] Participants
-  - [ ] table design: user_id, training_id
-- [ ] Attendance
-  - [ ] table design: participant_id, user_id, status, date
+- [x] Trainings
+  - [x] table design: program name, trainer name, company name, venue, start date, end date
+- [x] Participants
+  - [x] table design: user_id, training_id
+- [x] Attendance
+  - [x] table design: participant_id, user_id, status, date
 
 ## User Stories
 

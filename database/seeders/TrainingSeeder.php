@@ -20,14 +20,10 @@ class TrainingSeeder extends Seeder
         if(app()->environment() != 'production') {
             $company = Company::inRandomOrder()->first();
             $trainer = User::whereIsTrainer(true)->inRandomOrder()->first();
-            $started_at = now()->addMonth();
-            $ended_at = $started_at->copy()->addDays(rand(1, 5));
             
             Training::factory(rand(5, 10))->create([
                 'trainer_id' => $trainer->id, 
                 'company_id' => $company->id,
-                'started_at' => $started_at,
-                'ended_at' => $ended_at,
             ]);
         }
     }

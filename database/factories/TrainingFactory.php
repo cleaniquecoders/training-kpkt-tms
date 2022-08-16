@@ -16,9 +16,14 @@ class TrainingFactory extends Factory
      */
     public function definition()
     {
+        $started_at = now()->addMonths(rand(-6, 0));
+        $ended_at = $started_at->copy()->addDays(rand(1, 5));
+
         return [
             'name' => 'Training Laravel Framework Level ' . fake()->randomELement(['Basic', 'Intermediate', 'Advanced']),
             'venue' => fake('ms_MY')->address(),
+            'started_at' => $started_at,
+            'ended_at' => $ended_at,
         ];
     }
 }
