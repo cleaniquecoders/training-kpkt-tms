@@ -38,6 +38,7 @@ password: password
 
 ## User Stories
 
+- [ ] As an administrator, I can create, update, delete and see company details.
 - [ ] As an administrator, I can create, update, delete and see training details.
   - [ ] Training details: program name, trainer name, company name, venue, start and end date.
 - [ ] As an administrator, I can add / remove participant from training events
