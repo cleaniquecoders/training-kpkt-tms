@@ -15,6 +15,13 @@ php artisan migrate:fresh --seed
 php artisan serve
 ```
 
+On another terminal, run:
+
+```bash
+npm install 
+npm run dev
+```
+
 ## Domains
 
 - [x] Trainings
