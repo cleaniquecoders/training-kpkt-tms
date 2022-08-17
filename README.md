@@ -2,6 +2,26 @@
 
 Manage training events for an organization
 
+## Installation
+
+Clone this project. Create `training_management_system` database.
+
+```bash
+cd /path/to/training-kpkt-tms/
+cp .env.example .env 
+composer install 
+php artisan key:generate
+php artisan migrate:fresh --seed
+php artisan serve
+```
+
+On another terminal, run:
+
+```bash
+npm install 
+npm run dev
+```
+
 ## Domains
 
 - [x] Trainings
