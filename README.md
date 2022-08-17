@@ -22,6 +22,11 @@ npm install
 npm run dev
 ```
 
+Login using:
+
+email: admin@app
+password: password
+
 ## Domains
 
 - [x] Trainings
