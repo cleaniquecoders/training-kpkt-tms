@@ -27,6 +27,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_trainer',
+        'is_admin',
     ];
 
     /**
@@ -48,6 +50,8 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'is_trainer' => 'bool',
+        'is_admin' => 'bool',
     ];
 
     /**
@@ -58,4 +62,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function articles()
+    {
+        return $this->hasMany(Article::class);
+    }
 }
